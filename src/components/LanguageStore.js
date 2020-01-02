@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
+import LanguageContext from '../contexts/LanguageContext';
 
 class LanguageStore extends Component {
   render() {
-    return <div>Language Store</div>;
+    return (
+      <LanguageContext.Provider>
+        {this.props.children}
+      </LanguageContext.Provider>
+    );
   }
 }
 
