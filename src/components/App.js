@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import LanguageStore from './LanguageStore';
 import LanguageSelector from './LanguageSelector';
 import Form from './Form';
 
@@ -6,8 +7,10 @@ class App extends Component {
   render() {
     return (
       <div className="ui container">
-        <LanguageSelector />
-        <Form />
+        <LanguageStore>
+          <LanguageSelector />
+          <Form />
+        </LanguageStore>
       </div>
     );
   }
