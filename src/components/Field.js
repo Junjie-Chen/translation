@@ -5,6 +5,7 @@ class Field extends Component {
     return (
       <div className="ui field">
         <label>Name</label>
+        <input />
       </div>
     );
   }
