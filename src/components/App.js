@@ -10,7 +10,7 @@ class App extends Component {
       <div className="ui container">
         <LanguageStore>
           <LanguageSelector />
-          <ColorContext.Provider>
+          <ColorContext.Provider value="red">
             <Form />
           </ColorContext.Provider>
         </LanguageStore>
