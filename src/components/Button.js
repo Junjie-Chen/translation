@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
 
 class Button extends Component {
+  renderButton() {
+    return <button className="ui button primary">Submit</button>;
+  }
+
   render() {
-    return <div>Button</div>;
+    return this.renderButton();
   }
 }
 
