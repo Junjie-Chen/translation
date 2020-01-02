@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import LanguageStore from './LanguageStore';
 import LanguageSelector from './LanguageSelector';
 import Form from './Form';
+import ColorContext from '../contexts/ColorContext';
 
 class App extends Component {
   render() {
@@ -9,7 +10,9 @@ class App extends Component {
       <div className="ui container">
         <LanguageStore>
           <LanguageSelector />
-          <Form />
+          <ColorContext.Provider>
+            <Form />
+          </ColorContext.Provider>
         </LanguageStore>
       </div>
     );
