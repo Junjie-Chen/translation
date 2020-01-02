@@ -8,7 +8,7 @@ class LanguageSelector extends Component {
     return (
       <div>
         Select a Language:&nbsp;&nbsp;
-        <i className="flag us"></i>
+        <i className="flag us" onClick={() => this.context.onLanguageChange('English')}></i>
         <i className="flag nl"></i>
       </div>
     );
